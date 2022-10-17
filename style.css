@@ -7,15 +7,20 @@
     font-family:VCR;
     color: white;
     background: rgb(64, 58, 151);
-    --banner-width: 740px;
+    --banner-width: 800px;
 }
 
-h2{
-    
+h2, .sign{
     padding: 2em; 
     margin: 0px var(--banner-width);
     width: 400px;
 }
+
+.sign{
+    position:absolute;
+    top: 60vh;
+}
+
 form{
     margin: 0 auto;
     font-family: VCR;
@@ -99,5 +104,12 @@ button{
     font-family:FreeMono;
     left: var(--banner-width);
     right: 0px;
+    padding-left: 30px;
 
+}
+
+.footer{
+    position:absolute; 
+    top: 90vh;
+    left: 10vw;
 }
