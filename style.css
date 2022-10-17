@@ -1,0 +1,103 @@
+@font-face{
+    font-family:VCR;
+    src: url(VCR_OSD_MONO.ttf); 
+}
+
+:root{
+    font-family:VCR;
+    color: white;
+    background: rgb(64, 58, 151);
+    --banner-width: 740px;
+}
+
+h2{
+    
+    padding: 2em; 
+    margin: 0px var(--banner-width);
+    width: 400px;
+}
+form{
+    margin: 0 auto;
+    font-family: VCR;
+    width: 150 px;
+    padding: 2em;
+    border: 1px soild #ccc;
+    border-radius:1em;
+}
+
+
+label{
+    display: inline-block;
+    width: 200px;
+    text-align:left;
+}
+
+input{
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 170px;
+    height: 18px;
+    /* box-sizing: border-box; */
+    border: 1px solid #999; 
+    font-family:VCR;
+}
+
+
+input:focus, textarea:focus{
+    border-color: #000; 
+}
+
+
+.button{
+    padding-left: 90px;
+}
+
+button{
+    margin-top:2em;
+    font-family:VCR;
+    font-size:18px;
+}
+
+.card-container{
+    position:relative;
+    margin: -8px -8px;
+}
+
+.card-image{
+    position:absolute;
+    width: var(--banner-width);
+    height: 100vh;
+    z-index: -1;
+
+}
+
+.card-heading{
+    position:absolute;
+}
+
+.card-body{
+    position:absolute;
+    width: 300px;
+    padding: 15px;
+    top: 11rem;
+    font-size:28px;
+    text-shadow: 3px 3px blue; 
+    margin: 0px 150px;
+    background: black;
+    opacity:0.8;
+    color: white;
+    text-align: center ;
+}
+
+.form-body{
+    position:absolute; 
+    background: black;
+    opacity:0.7; 
+    z-index: 1;
+    font-family:FreeMono;
+    left: var(--banner-width);
+    right: 0px;
+
+}
